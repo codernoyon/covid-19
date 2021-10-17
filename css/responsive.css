@@ -17,6 +17,10 @@
     .childHome{
         flex-basis: 100%;
     }
+    
+    .homeImg{
+        padding-top: 50px;
+    }
 
     .childHome h1 {
         font-size: 30px;
