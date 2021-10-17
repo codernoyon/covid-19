@@ -1,0 +1,207 @@
+:root{
+    --main-color:linear-gradient(to right, #Acafd3, #Fbad37);
+    --black:#244361;
+    --box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+/* default css */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', arial,  sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 80px 0px;
+}
+
+
+/* header section */
+header{
+    background: rgb(255, 255, 255);
+    display: flex;
+    box-shadow: 1px 1px 9px #918a8a9f;
+    position: fixed;
+    width: 100%;
+}
+
+.navBar{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.logo{
+    color: var(--black);
+    font-size: 22px;
+}
+
+.navItems{
+    text-align: right;
+}
+
+.navBar .navItems .navItem{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navBar .navItems .navItem .navLink{
+    color: var(--black);
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    transition: all .3s;
+
+}
+
+.navBar .navItems .navItem .navLink:hover{
+    background: var(--main-color);
+    color: #fff;
+}
+
+.navBar .navItems .navItem .navLink:active{
+    background: red;
+}
+
+
+
+/* menuBar */
+
+#menuIcon{
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    display: none;
+    border: none;
+    font-size: 20px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+
+}
+
+.menu{
+    filter: brightness(0);
+}
+
+#sideNavBar{
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    transition: .8s;
+}
+
+#sideNavBar  .sideNavItems{
+    text-align: left;
+    background: linear-gradient(rgba(255, 214, 34, 0.96), rgba(255, 240, 34, 0.6));
+    backdrop-filter: blur(8px);
+    height: 100vh;
+    padding-top: 10px;
+}
+
+#sideNavBar  .sideNavItems .navItem .navLink{
+    color: var(--black);
+    padding: 15px 0;
+    display: block;
+    background: transparent;
+    padding: 10px 20px;
+}
+
+#sideNavBar  .sideNavItems .navItem .navLink:hover{
+    background: #fff;
+}
+
+/* home section */
+
+#home{
+    background: url(../img/home-bg.png);
+}
+
+.innerHome{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.childHome{
+    flex-basis: 45%;
+}
+
+.childHome p{
+    font-size: 18px;
+}
+
+.childHome h1{
+    font-size: 40px;
+    color: var(--black);
+}
+
+.childHome button{
+    border: none;
+    display: block;
+    margin-top: 15px;
+}
+.childHome button a{
+    color: #fff;
+    background: var(--main-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+/* about section */
+
+.innerAbout{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.childAbout{
+    flex-basis: 45%;
+
+}
+
+.childAbout h1{
+    font-size: 35px;
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 10px;
+
+}
+
+.childAbout p{
+    margin-bottom: 20px;
+    text-align: justify;
+    color: grey;
+}
