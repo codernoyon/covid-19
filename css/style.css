@@ -80,7 +80,7 @@ header{
 }
 
 .navBar .navItems .navItem .navLink:active{
-    background: red;
+    background: rgb(85, 197, 85);
 }
 
 
