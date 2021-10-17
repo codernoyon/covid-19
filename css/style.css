@@ -51,7 +51,7 @@ header{
     padding: 15px 0px;
 }
 
-.logo{
+.logo a{
     color: var(--black);
     font-size: 22px;
 }
