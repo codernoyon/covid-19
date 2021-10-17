@@ -118,7 +118,6 @@ header{
     background: linear-gradient(rgba(255, 214, 34, 0.96), rgba(255, 240, 34, 0.6));
     backdrop-filter: blur(8px);
     height: 100vh;
-    padding-top: 10px;
 }
 
 #sideNavBar  .sideNavItems .navItem .navLink{
@@ -126,7 +125,9 @@ header{
     padding: 15px 0;
     display: block;
     background: transparent;
-    padding: 10px 20px;
+    padding: 20px 20px;
+    font-size: 18px;
+    transition: .3s;
 }
 
 #sideNavBar  .sideNavItems .navItem .navLink:hover{
