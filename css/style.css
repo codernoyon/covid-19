@@ -123,14 +123,14 @@ header{
     display: none;
     position: fixed;
     right: 0;
-    top: 0;
-    width: 300px;
+    top: 0px;
+    width: 250px;
     transition: .8s;
 }
 
 #sideNavBar  .sideNavItems{
     text-align: left;
-    background: linear-gradient(rgba(255, 214, 34, 0.96), rgba(255, 240, 34, 0.6));
+    background: linear-gradient(rgb(250 162 30), rgb(251 173 55));
     backdrop-filter: blur(8px);
     height: 100vh;
 }
@@ -287,7 +287,7 @@ header{
 
 .childExpert{
     flex-basis: 22%;
-    background: #fafafa;
+    background: rgba(255, 255, 255, 0.796);
     border-radius: 10px;
     padding: 20px 15px;
     box-shadow: 0px 0px 2px 0px #cecece;
@@ -299,7 +299,7 @@ header{
 .childExpert .expertImg {
     width: 220px;
     display: inline-block;
-    background: rgba(214, 235, 255, 0.575);
+    background: rgba(214, 235, 255, 0.185);
     margin: 10px 0;
     border-radius: 5px;
 }
@@ -345,12 +345,13 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: center;
 }
 
 .contactBox{
     flex-basis: 48%;
     box-shadow: 0px 0px 5px 2px #b6b6b6;
-    padding: 20px;
+    padding: 30px;
     border-radius: 5px;
 }
 
@@ -364,13 +365,23 @@ header{
     margin-bottom: 20px;
     border: none;
     background: rgba(240, 238, 238, 0.541);
+    border-radius: 5px;
 }
 
 .contactBox input[type='submit']{
     margin-bottom: 0;
     background: var(--main-color);
     color: #fff;
-    border: none;
+    border: 1px solid#Fbad37;
+    display: inline-block;
+    width: 130px;
+    transition: .3s;
+}
+
+.contactBox input[type='submit']:hover{
+    color: #Fbad37;
+    border: 1px solid #Fbad37;
+    background: transparent;
 }
 
 .contactMap{
@@ -396,9 +407,14 @@ header{
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 2px #b6b6b6;
+    box-shadow: 0px 0px 5px 2px #f0eeee;
     margin-bottom: 30px;
+    transition: .5s;
 
+}
+
+.childBlog:hover{
+    box-shadow: 0px 0px 5px 4px #f0eeee;
 }
 
 .childBlog .blogImg{
@@ -411,6 +427,7 @@ header{
 
 .childBlog h3{
     font-size: 20px;
+    color: var(--black);
 }
 
 .childBlog .homeBtn{
@@ -420,4 +437,44 @@ header{
 .blogDetails{
     display: flex;
     justify-content: space-between;
+}
+
+.blogDetails p a{
+    color: rgba(10, 139, 190, 0.651);
+}
+
+/* foote section */
+
+#footer{
+    background: rgb(247, 244, 244);
+    padding-top: 60px;
+}
+
+.innerFooter{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.childFooter h3{
+    font-size: 20px;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+
+.childFooter ul li a{
+    color: var(--black);
+}
+
+.childFooter ul li a:hover{
+    text-decoration: underline;
+}
+
+.footerSignature{
+    text-align: center;
+    color: var(--black);
+    padding: 30px 0px;
 }
