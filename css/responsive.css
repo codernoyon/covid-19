@@ -1,8 +1,9 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .navBar {
-        width: 92%;
+        width: 91%;
 
     }
+    
     #sideNavBar{
         display: block;
     }
@@ -15,7 +16,7 @@
 
     /* home section */
     .childHome{
-        flex-basis: 100%;
+        flex-basis: 45%;
     }
     
     .homeImg{
@@ -35,7 +36,7 @@
 
     /* about section */
     .childAbout{
-        flex-basis: 100%;
+        flex-basis: 45%;
     
     }
 
@@ -46,4 +47,37 @@
     .childAbout p{
         font-size: 15px;
     }
+
+    /* expert section */
+    .childExpert{
+        flex-basis: 45%;
+        margin-bottom: 30px;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .childHome{
+        flex-basis: 100%;
+    }
+
+    .childAbout{
+        flex-basis: 100%;
+    }
+
+    .childPrevent{
+        flex-basis: 100%;
+    }
+    .cp_4, .cp_5{
+        margin-bottom: 30px;
+    }
+
+    .childExpert{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+    
+
+
+
